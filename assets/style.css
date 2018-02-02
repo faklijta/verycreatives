@@ -1,8 +1,7 @@
 body{
-  position: relative;
 }
 .container{
-  position: absolute;
+  margin: 0 auto;
   width: 250px;
   height: 400px;
   border: 1px outset black;
@@ -16,7 +15,7 @@ body{
 }
 .header-bottom{
   display: flex;
-  height: 25px;
+  height: 35px;
   background: gray;
   justify-content: space-around
 }
@@ -26,7 +25,7 @@ body{
 }
 
 .ball{
-  background: black;
+  background: pink;
   border-radius: 50%;
   height: 30px;
   width: 30px;
