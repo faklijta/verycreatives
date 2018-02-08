@@ -5,6 +5,7 @@ function ajax (method, url, data, callback) {
     xhr.addEventListener("readystatechange", function () {
       if (this.readyState === 4) {
         var requestAPI = JSON.parse(xhr.response);
+        console.log(xhr.response)
         callback(requestAPI);
       }
     });

@@ -18,5 +18,6 @@ logins = { # ugly on purpose
 
 h = people.to_h
 
-a = logins.select{ |e| h.has_key?(e[0]) }.map { |e| [e, h[e[0]]] }
-a.each{ |e| print e}
+a = h.select{ |e| logins.has_key?(e[0]) }.map { |e| [e, logins[e[0]]] }
+years = a.each{ |e| e[1].each{ |f| puts f.year } }
+
